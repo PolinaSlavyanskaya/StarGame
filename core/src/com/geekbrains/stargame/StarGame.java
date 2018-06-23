@@ -6,16 +6,18 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Vector2;
 
 public class StarGame extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
-	TextureRegion region;
-	
+//	TextureRegion region;
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
 		img = new Texture("nebula.jpg");
+		Vector2 v1 = new Vector2();
 //		region = new TextureRegion(img, 10, 10, 100, 100);
 	}
 
